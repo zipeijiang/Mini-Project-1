@@ -2,18 +2,11 @@
     <body>
         <h1>Regex Parser</h1>
         <p>This is a website for testing your regular expressions!</p>
-        <form>
-            <p>
-                <label for="regexp">Type your regular expression below:</label><br/>
-                <input type="text" name="regular_expression" id="regexp" placeholder="[A-Z]+]"><br/>
-            </p>
-            <p>
+                <label for="regex">Type your regular expression below:</label><br/>
+                <input type="text" name="regular_expression" id="regex" placeholder="[A-Z]+"><br/>
                 <label for="textdata">Test input here!</label><br/>
-                <textarea id="textdata" name="textdata" placeholder="Put your text here" rows="4" cols="40"></textarea>
-            </p>
-            <p>
-                <input type="submit" value="Parse">
-            </p>
-        </form>
+                <textarea id="textdata" name="textdata" placeholder="Put your text here" id="text" rows="4" cols="40"></textarea><br/>
+                <button type="button" id="parse" onclick="highlight()">Parse</button>
+                <p id = "output"></p>
         </body>
 </html>
